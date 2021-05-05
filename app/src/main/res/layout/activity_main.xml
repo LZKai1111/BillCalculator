@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:text="@string/amount" />
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15px"
+        android:layout_marginLeft="15px"
+        android:layout_marginEnd="15px"
+        android:layout_marginRight="15px"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:text="@string/num_of_pax" />
+
+    <EditText
+        android:id="@+id/editTextPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15px"
+        android:layout_marginLeft="15px"
+        android:layout_marginEnd="15px"
+        android:layout_marginRight="15px"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButtonSVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15px"
+            android:layout_marginLeft="15px"
+            android:layout_marginEnd="15px"
+            android:layout_marginRight="15px"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOff="@string/no_svs"
+            android:textOn="@string/svs" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonGST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15px"
+            android:layout_marginLeft="15px"
+            android:layout_marginEnd="15px"
+            android:layout_marginRight="15px"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textOff="@string/no_gst"
+            android:textOn="@string/gst" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:text="@string/discount" />
+
+    <EditText
+        android:id="@+id/editTextDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15px"
+        android:layout_marginLeft="15px"
+        android:layout_marginEnd="15px"
+        android:layout_marginRight="15px"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/extra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cash" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPayNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paynow" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSPLIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15px"
+            android:layout_marginLeft="15px"
+            android:layout_marginEnd="15px"
+            android:layout_marginRight="15px"
+            android:layout_weight="1"
+            android:text="@string/split" />
+
+        <Button
+            android:id="@+id/buttonRESET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15px"
+            android:layout_marginLeft="15px"
+            android:layout_marginEnd="15px"
+            android:layout_marginRight="15px"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15px"
+        android:layout_marginLeft="15px"
+        android:layout_weight="1"
+        android:text="@string/total_bill" />
+
+    <TextView
+        android:id="@+id/textViewPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15px"
+        android:layout_marginLeft="15px"
+        android:text="@string/each_pays" />
+
+</LinearLayout>
